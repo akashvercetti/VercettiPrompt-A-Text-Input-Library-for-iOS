@@ -12,9 +12,11 @@
 		7AA484312168B65D00F63BE0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AA4842F2168B65D00F63BE0 /* Main.storyboard */; };
 		7AA484332168B65E00F63BE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AA484322168B65E00F63BE0 /* Assets.xcassets */; };
 		7AA484362168B65E00F63BE0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AA484342168B65E00F63BE0 /* LaunchScreen.storyboard */; };
+		A232B6C93D5AED66FD56DE31 /* Pods_VercettiPromptDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A50910AC483ACF04C4931855 /* Pods_VercettiPromptDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2855F2D759171C2CF4A5380D /* Pods-VercettiPromptDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VercettiPromptDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-VercettiPromptDemo/Pods-VercettiPromptDemo.release.xcconfig"; sourceTree = "<group>"; };
 		7AA484282168B65D00F63BE0 /* VercettiPromptDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VercettiPromptDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AA4842B2168B65D00F63BE0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7AA4842D2168B65D00F63BE0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		7AA484322168B65E00F63BE0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7AA484352168B65E00F63BE0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7AA484372168B65E00F63BE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A50910AC483ACF04C4931855 /* Pods_VercettiPromptDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VercettiPromptDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF6EAB3E3AB24FB51E4C3EFA /* Pods-VercettiPromptDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VercettiPromptDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VercettiPromptDemo/Pods-VercettiPromptDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A232B6C93D5AED66FD56DE31 /* Pods_VercettiPromptDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		594789997C02301131069792 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A50910AC483ACF04C4931855 /* Pods_VercettiPromptDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7AA4841F2168B65D00F63BE0 = {
 			isa = PBXGroup;
 			children = (
 				7AA4842A2168B65D00F63BE0 /* VercettiPromptDemo */,
 				7AA484292168B65D00F63BE0 /* Products */,
+				FE77E34BC99555B2174C862E /* Pods */,
+				594789997C02301131069792 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +79,15 @@
 			path = VercettiPromptDemo;
 			sourceTree = "<group>";
 		};
+		FE77E34BC99555B2174C862E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DF6EAB3E3AB24FB51E4C3EFA /* Pods-VercettiPromptDemo.debug.xcconfig */,
+				2855F2D759171C2CF4A5380D /* Pods-VercettiPromptDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7AA4843A2168B65E00F63BE0 /* Build configuration list for PBXNativeTarget "VercettiPromptDemo" */;
 			buildPhases = (
+				D0DFC577E6E15A6A16EC764E /* [CP] Check Pods Manifest.lock */,
 				7AA484242168B65D00F63BE0 /* Sources */,
 				7AA484252168B65D00F63BE0 /* Frameworks */,
 				7AA484262168B65D00F63BE0 /* Resources */,
+				9F52130830475DBE7A58B3D1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +155,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9F52130830475DBE7A58B3D1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-VercettiPromptDemo/Pods-VercettiPromptDemo-frameworks.sh",
+				"${PODS_ROOT}/VercettiPrompt/VercettiPrompt.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/VercettiPrompt.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VercettiPromptDemo/Pods-VercettiPromptDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D0DFC577E6E15A6A16EC764E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VercettiPromptDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7AA484242168B65D00F63BE0 /* Sources */ = {
@@ -213,7 +286,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -268,7 +341,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -280,6 +353,7 @@
 		};
 		7AA4843B2168B65E00F63BE0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF6EAB3E3AB24FB51E4C3EFA /* Pods-VercettiPromptDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +372,7 @@
 		};
 		7AA4843C2168B65E00F63BE0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2855F2D759171C2CF4A5380D /* Pods-VercettiPromptDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
