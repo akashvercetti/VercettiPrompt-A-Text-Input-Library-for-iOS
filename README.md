@@ -1,5 +1,5 @@
 # VercettiPrompt
-======================================
+
 
 **A dialog alert prompt that accepts a text input from the user and handles it via a delegate, using Swift.**
 
@@ -7,7 +7,7 @@
 `pod 'VercettiPrompt'`
 
 
-# Basic Prompt!
+# Look at all the customizations!
 
 | **Basic**      | **Customized** |
 | ----------- | ----------- |
@@ -16,3 +16,22 @@
 | ![Custom Buttons](https://i.imgur.com/FRZWFOz.gif) | ![Lick](https://i.imgur.com/ryv5qg7.jpg) |
 
 
+# Lets look at some sample code!
+
+# The essentials.
+
+**Instantiate View Controller and setup transition variables**
+
+```let textPromptVC = TextInputPromptViewController.instantiateFromStoryboard()
+textPromptVC.modalPresentationStyle = .custom
+let vercettiTransistionDelegate = VercettiTransistionDelegate()
+textPromptVC.transitioningDelegate = vercettiTransistionDelegate```
+
+**Set the title text, description if needed and present the dialog**
+
+```textPromptVC.titleText = "The wheels of the bus go round and round"
+textPromptVC.positiveButtonText = "Confirm"
+textPromptVC.descriptionText = "Round and round"
+present(textPromptVC, animated: true, completion: nil)```
+
+        
