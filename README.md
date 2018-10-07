@@ -76,7 +76,7 @@ textPromptVC.descriptionColor = UIColor.blue
  textPromptVC.positiveButtonType = ButtonType.solid(backgroundColor: UIColor.blue, textColor: UIColor.white)
  ```
  
- **Download the demo project to play around with the properties**
+ **Download the demo project to play around with the properties. You might wanna do the pod install thingy to get it to run.**
  
  # Customizable properties.
  
