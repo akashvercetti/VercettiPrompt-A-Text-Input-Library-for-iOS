@@ -13,7 +13,7 @@
 | ----------- | ----------- |
 | ![Basic](https://i.imgur.com/rIEIjTD.gif) | ![Customized](https://i.imgur.com/aLfRM2E.gif) |
 | **Custom Buttons**      | **Yummy** |
-| ![Custom Buttons](https://i.imgur.com/FRZWFOz.gif) | ![Lick](https://i.imgur.com/ryv5qg7.jpg) |
+| ![Custom Buttons](https://i.imgur.com/FRZWFOz.gif) | ![Lick](https://i.imgur.com/cVjUc43.jpg) |
 
 
 # Lets look at some sample code!
