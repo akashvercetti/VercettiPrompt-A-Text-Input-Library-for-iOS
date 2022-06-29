@@ -1,0 +1,11 @@
+framework module VercettiPrompt {
+  umbrella header "VercettiPrompt.h"
+
+  export *
+  module * { export * }
+}
+
+module VercettiPrompt.Swift {
+    header "VercettiPrompt-Swift.h"
+    requires objc
+}

@@ -1,0 +1,61 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.5.2 (swiftlang-1300.0.47.5 clang-1300.0.29.30)
+// swift-module-flags: -target arm64-apple-ios10.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name VercettiPrompt
+import Foundation
+import Swift
+import UIKit
+@_exported import VercettiPrompt
+import _Concurrency
+extension UIKit.UILabel {
+  @_Concurrency.MainActor(unsafe) public class func size(withText text: Swift.String, forWidth width: CoreGraphics.CGFloat?, forHeight height: CoreGraphics.CGFloat?, forFont font: UIKit.UIFont) -> CoreGraphics.CGSize
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class VercettiTransistionDelegate : ObjectiveC.NSObject, UIKit.UIViewControllerTransitioningDelegate {
+  @_Concurrency.MainActor(unsafe) @objc open func presentationController(forPresented presented: UIKit.UIViewController, presenting: UIKit.UIViewController?, source: UIKit.UIViewController) -> UIKit.UIPresentationController?
+  @objc override dynamic public init()
+  @objc deinit
+}
+public enum ButtonType {
+  case bordered(borderColor: UIKit.UIColor?, borderRadius: CoreGraphics.CGFloat?, textColor: UIKit.UIColor?, borderWidth: CoreGraphics.CGFloat?)
+  case solid(backgroundColor: UIKit.UIColor, textColor: UIKit.UIColor?)
+}
+public protocol VercettiPromptDelegate {
+  func textAdded(text: Swift.String?)
+}
+@objc @_inheritsConvenienceInitializers @_Concurrency.MainActor(unsafe) open class TextInputPromptViewController : UIKit.UIViewController {
+  @_Concurrency.MainActor(unsafe) open class func instantiateFromStoryboard() -> VercettiPrompt.TextInputPromptViewController
+  @_Concurrency.MainActor(unsafe) open var positiveButtonType: VercettiPrompt.ButtonType
+  @_Concurrency.MainActor(unsafe) open var negativeButtonType: VercettiPrompt.ButtonType
+  @_Concurrency.MainActor(unsafe) open var vercettiPromptDelegate: VercettiPrompt.VercettiPromptDelegate?
+  @_Concurrency.MainActor(unsafe) open var titleText: Swift.String?
+  @_Concurrency.MainActor(unsafe) open var positiveButtonText: Swift.String
+  @_Concurrency.MainActor(unsafe) open var negativeButtonText: Swift.String
+  @_Concurrency.MainActor(unsafe) open var placeholderText: Swift.String
+  @_Concurrency.MainActor(unsafe) open var characterLimit: Swift.Int
+  @_Concurrency.MainActor(unsafe) open var captitalizationType: UIKit.UITextAutocapitalizationType
+  @_Concurrency.MainActor(unsafe) open var inputText: Swift.String?
+  @_Concurrency.MainActor(unsafe) open var descriptionText: Swift.String?
+  @_Concurrency.MainActor(unsafe) open var hideNegativeButton: Swift.Bool
+  @_Concurrency.MainActor(unsafe) open var isTextMandatory: Swift.Bool
+  @_Concurrency.MainActor(unsafe) open var titleFont: UIKit.UIFont?
+  @_Concurrency.MainActor(unsafe) open var descriptionFont: UIKit.UIFont?
+  @_Concurrency.MainActor(unsafe) open var positiveButtonFont: UIKit.UIFont?
+  @_Concurrency.MainActor(unsafe) open var negativeButtonFont: UIKit.UIFont?
+  @_Concurrency.MainActor(unsafe) open var textFieldBorderStyle: UIKit.UITextField.BorderStyle?
+  @_Concurrency.MainActor(unsafe) open var titleColor: UIKit.UIColor?
+  @_Concurrency.MainActor(unsafe) open var descriptionColor: UIKit.UIColor?
+  @_Concurrency.MainActor(unsafe) open var disabledPositiveButtonColor: UIKit.UIColor?
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open var inputAccessoryView: UIKit.UIView? {
+    @_Concurrency.MainActor(unsafe) @objc get
+  }
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewDidLoad()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewWillDisappear(_ animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func viewDidLayoutSubviews()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func didReceiveMemoryWarning()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public init(nibName nibNameOrNil: Swift.String?, bundle nibBundleOrNil: Foundation.Bundle?)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder: Foundation.NSCoder)
+  @objc deinit
+}
+extension VercettiPrompt.TextInputPromptViewController : UIKit.UITextFieldDelegate {
+  @_Concurrency.MainActor(unsafe) @objc dynamic open func textFieldShouldReturn(_ textField: UIKit.UITextField) -> Swift.Bool
+  @_Concurrency.MainActor(unsafe) @objc dynamic open func textField(_ textField: UIKit.UITextField, shouldChangeCharactersIn range: Foundation.NSRange, replacementString string: Swift.String) -> Swift.Bool
+}

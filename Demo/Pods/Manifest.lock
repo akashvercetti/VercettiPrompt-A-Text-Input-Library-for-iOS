@@ -1,0 +1,16 @@
+PODS:
+  - VercettiPrompt (1.1.0)
+
+DEPENDENCIES:
+  - VercettiPrompt (from `../Framework`)
+
+EXTERNAL SOURCES:
+  VercettiPrompt:
+    :path: "../Framework"
+
+SPEC CHECKSUMS:
+  VercettiPrompt: 0fd3ee160909b7c399e31c988766d74ee127d31e
+
+PODFILE CHECKSUM: 0d072edb33d2514e83ff6d48c3b6e14ac88d35b1
+
+COCOAPODS: 1.10.1
