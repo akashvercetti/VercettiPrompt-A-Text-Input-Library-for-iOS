@@ -1,15 +1,5 @@
 # VercettiPrompt
 
-![TeamCity CodeBetter](https://img.shields.io/teamcity/codebetter/bt428.svg)
-![CocoaPods](https://img.shields.io/badge/platform-ios-lightgrey.svg)
-![CocoaPods](https://img.shields.io/badge/version-1.0.1-blue.svg)
-![Akashvercetti](https://img.shields.io/badge/this%20library%20is-lit%20af-orange.svg)
-![Akashvercetti](https://img.shields.io/badge/Will%20it%20work%3F-Maybe-yellowgreen.svg)
-
-
-
-
-
 
 **A dialog alert prompt that accepts a text input from the user and handles it via a delegate, using Swift.**
 
